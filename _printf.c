@@ -57,7 +57,7 @@ int handleString(char specifier1, char stringEnd, va_list params)
  *   * Procudes an output according to a format and additional arguments
  *    * @format: the formatting string to use
  *     * Return: the number of characters printed
- *     */
+ */
 
 int _printf(const char *format, ...)
 {
