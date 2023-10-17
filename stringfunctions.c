@@ -16,7 +16,7 @@ int _putchar(int character)
  *   * often used in conjunction with the %s format in _printf
  *    * @string: string to print
  *     * Return: Amount of characters printed
- *     */
+ */
 
 int sPrinter(char *string)
 {
