@@ -1,8 +1,18 @@
 #include "main.h"
 
 /**
-comments here
-**/
+ * handleString - Handles string formatting and prints to standard output.
+ *
+ * @specifier1: The format specifier character (e.g., 'c', 's', '%').
+ * @stringEnd: A character that marks the end of the string.
+ * @params: A va_list containing the variadic arguments.
+ *
+ * Return: The number of characters printed or an error code:
+ * - 1 for 'c' or '%' specifiers
+ * - The return value of sPrinter for 's' specifier
+ * - -2 if an unknown specifier is encountered
+ * - -1 if an error occurs
+ */
 
 int handleString(char specifier1, char stringEnd, va_list params)
 {
