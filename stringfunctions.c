@@ -4,7 +4,7 @@
  *  * _putchar - writes a character to standard output buffer
  *   * @character: character to write, passed as an int to avoid casting errors
  *    * Return: 1 or -1
- *    */
+*/
 
 int _putchar(int character)
 {
