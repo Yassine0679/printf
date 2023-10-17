@@ -17,6 +17,7 @@
 int handleString(char specifier1, char stringEnd, va_list params)
 {
 	int iserror = 0, tempholder = 0;
+
 	if (!params)
 		return (0);
 	switch (specifier1)
@@ -27,11 +28,9 @@ int handleString(char specifier1, char stringEnd, va_list params)
 		case 's':
 			tempholder = sPrinter(va_arg(params, char *));
 			return (tempholder);
-			break;
 		case '%':
 			_putchar(37);
 			return (1);
-			break;
 		case '\0':
 			iserror = 1;
 			break;
@@ -63,7 +62,9 @@ int handleString(char specifier1, char stringEnd, va_list params)
 int _printf(const char *format, ...)
 {
 	int i = 0, number_printed = 0, tempholder = 0, iserror = 0;
+
 	va_list params;
+
 	va_start(params, format);
 	if (!format || (format[0] == '%' && !format[1]))
 		return (-1);
